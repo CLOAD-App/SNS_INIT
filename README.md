@@ -1,0 +1,1 @@
+CLOAD SNS_INIT
