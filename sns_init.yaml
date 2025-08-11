@@ -1,0 +1,264 @@
+
+name: CLOAD
+
+description: >
+    CLOAD is a full-featured Web3 content platform built on the ICP blockchain
+
+    It integrates encrypted file storage, decentralized app publishing, NFT trading, on-chain assets, private messaging, and social interaction all 100% on-chain
+
+    Users can experience Web3 without a wallet, enjoying true decentralization. Powered by modular Canister architecture, CLOAD is building the next-generation Web3 ecosystem
+
+
+logo: logo.png
+
+
+url: https://cload.one
+
+
+NnsProposal:
+    title: "NNS Proposal to create an SNS named 'CLOAD DAO'"
+
+
+    url: "https://forum.dfinity.org/t/upcoming-cload-sns-decentralization/55098"
+
+
+    summary: >
+        ## CLOAD DAO SNS 
+        Proposal to create an SNS for CLOAD DAO.
+
+        ## The SNS will be initialized with the following parameters:
+        * CLOAD total supply at genesis: 1_000_000_000 CLOAD
+        * Treasury: 600_000_000 CLOAD (60%)
+        * Tokens allocated to decentralization sale (SNS swap): 230_000_000 CLOAD (23%)
+        * Tokens allocated to core team & early developers: 120_000_000 CLOAD (12%)
+        * Allocated to Seed Round investors: 50_000_000 CLOAD (5%)
+        * ICP to raise min: 80_000 ICP
+        * ICP to raise max: 800_000 ICP
+        * Min number of tokens per contributor: 1 ICP
+        * Max number of tokens per contributor: 100_000 ICP
+        * Min number of participants: 50
+        * Min dissolve delay: 1 month
+        * Max dissolve delay bonus: 3 years (+100%)
+        * Voting rewards: Initial 2% - Final 1% over 3 years
+
+        ## About
+        CLOAD is a full-featured Web3 content platform built entirely on the ICP blockchain.
+        It integrates encrypted file storage, decentralized app publishing, NFT trading, on-chain asset management, private messaging, and social interaction - all 100% on-chain.
+        CLOAD allows users to experience Web3 without a wallet, ensuring true decentralization.
+        Powered by a modular Canister architecture, it guarantees performance, transparency, and sustainability.
+
+        ##  Learn more
+        * [Website](https://cload.one/) 
+        * [Whitepaper]() 
+        * [Discord](https://discord.com/invite/QAkpWSwnwM) 
+        * [X](https://x.com/Cload_app) 
+        * [Github](https://github.com/CLOAD-app)
+        * [Telegram](https://t.me/Cload_App)
+        * [Docs](https://docs.cload.one/)
+
+fallback_controller_principals:
+
+    - rq4he-fiahz-5gny4-pznug-yycle-oh6fi-tfm7b-gqyo7-o5drx-te6gv-kqe
+
+
+dapp_canisters:
+    
+    #CLOAD core services canister
+    - yffxi-vqaaa-aaaak-qcrnq-cai
+    #CLOAD content services canister
+    - lyr3s-lqaaa-aaaak-qugvq-cai
+    #crypto disk canister
+    - ecvgk-vqaaa-aaaak-quhrq-cai
+    #cycles allocation canister
+    - j6jj7-caaaa-aaaak-qugyq-cai
+    #NFT related canister
+    - 24t7b-laaaa-aaaak-quf6q-cai
+    #activity reward services canister
+    - pva7i-yqaaa-aaaak-qugpq-cai
+    #backup canister
+    - emmm6-kaaaa-aaaak-qlnwa-cai
+
+
+Token:
+
+    name: CLOAD DAO Token
+
+    symbol: CLOAD
+
+    transaction_fee: 100_000 e8s
+
+    logo: logo.png
+
+Proposals:
+
+    rejection_fee: 1_000 token
+
+    initial_voting_period: 4 days
+
+    maximum_wait_for_quiet_deadline_extension: 1 day
+
+Neurons:
+
+    minimum_creation_stake: 100 tokens
+
+
+Voting:
+
+    minimum_dissolve_delay: 1 month
+
+    MaximumVotingPowerBonuses:
+
+        DissolveDelay:
+
+            duration: 3 years
+
+            bonus: 100%
+
+        Age:
+
+            duration: 2 years
+
+            bonus: 25%
+
+    RewardRate:
+
+        initial: 2%
+
+        final: 1%
+
+        transition_duration: 3 years
+
+
+Distribution:
+ 
+    Neurons:
+
+        - principal: rq4he-fiahz-5gny4-pznug-yycle-oh6fi-tfm7b-gqyo7-o5drx-te6gv-kqe
+          stake: 1_000_000 tokens
+          memo: 1
+          dissolve_delay: 1 month
+          vesting_period: 0 years
+        - principal: 7qutu-4o2v6-gkect-55wla-zwnpc-dt4ry-hxevj-icwvl-zeqk4-o2zsv-zqe
+          stake: 11_000_000 tokens
+          memo: 1
+          dissolve_delay: 1 month
+          vesting_period: 0 years
+        - principal: 7qutu-4o2v6-gkect-55wla-zwnpc-dt4ry-hxevj-icwvl-zeqk4-o2zsv-zqe
+          stake: 12_000_000 tokens
+          memo: 2
+          dissolve_delay: 1 month
+          vesting_period: 6 months
+        - principal: 7qutu-4o2v6-gkect-55wla-zwnpc-dt4ry-hxevj-icwvl-zeqk4-o2zsv-zqe
+          stake: 12_000_000 tokens
+          memo: 3
+          dissolve_delay: 1 month
+          vesting_period: 12 months
+        - principal: 7qutu-4o2v6-gkect-55wla-zwnpc-dt4ry-hxevj-icwvl-zeqk4-o2zsv-zqe
+          stake: 12_000_000 tokens
+          memo: 4
+          dissolve_delay: 1 month
+          vesting_period: 18 months
+        - principal: 7qutu-4o2v6-gkect-55wla-zwnpc-dt4ry-hxevj-icwvl-zeqk4-o2zsv-zqe
+          stake: 12_000_000 tokens
+          memo: 5
+          dissolve_delay: 1 month
+          vesting_period: 24 months
+        - principal: an2fu-wmt2w-7fhvx-2g6qp-pq5pc-gdxu3-jfcr5-epiid-qhdzc-xnv3a-mae
+          stake: 12_000_000 tokens
+          memo: 6
+          dissolve_delay: 1 month
+          vesting_period: 0 years
+        - principal: an2fu-wmt2w-7fhvx-2g6qp-pq5pc-gdxu3-jfcr5-epiid-qhdzc-xnv3a-mae
+          stake: 12_000_000 tokens
+          memo: 7
+          dissolve_delay: 1 month
+          vesting_period: 6 months
+        - principal: an2fu-wmt2w-7fhvx-2g6qp-pq5pc-gdxu3-jfcr5-epiid-qhdzc-xnv3a-mae
+          stake: 12_000_000 tokens
+          memo: 8
+          dissolve_delay: 1 month
+          vesting_period: 12 months
+        - principal: an2fu-wmt2w-7fhvx-2g6qp-pq5pc-gdxu3-jfcr5-epiid-qhdzc-xnv3a-mae
+          stake: 12_000_000 tokens
+          memo: 9
+          dissolve_delay: 1 month
+          vesting_period: 18 months
+        - principal: an2fu-wmt2w-7fhvx-2g6qp-pq5pc-gdxu3-jfcr5-epiid-qhdzc-xnv3a-mae
+          stake: 12_000_000 tokens
+          memo: 10
+          dissolve_delay: 1 month
+          vesting_period: 24 months
+        - principal: an2fu-wmt2w-7fhvx-2g6qp-pq5pc-gdxu3-jfcr5-epiid-qhdzc-xnv3a-mae
+          stake: 16_700_000 tokens
+          memo: 11
+          dissolve_delay: 0 month
+          vesting_period: 0 month
+        - principal: an2fu-wmt2w-7fhvx-2g6qp-pq5pc-gdxu3-jfcr5-epiid-qhdzc-xnv3a-mae
+          stake: 16_700_000 tokens
+          memo: 12
+          dissolve_delay: 0 month
+          vesting_period: 1 month
+        - principal: an2fu-wmt2w-7fhvx-2g6qp-pq5pc-gdxu3-jfcr5-epiid-qhdzc-xnv3a-mae
+          stake: 16_600_000 tokens
+          memo: 13
+          dissolve_delay: 0 month
+          vesting_period: 2 month
+
+    InitialBalances:
+
+        treasury: 600_000_000 tokens
+
+        swap: 230_000_000 tokens
+
+    total: 1_000_000_000 tokens
+
+Swap:
+
+    minimum_participants: 50
+
+    minimum_direct_participation_icp: 80_000 tokens
+
+    maximum_direct_participation_icp: 800_000 tokens
+
+    minimum_participant_icp: 1 tokens
+
+    maximum_participant_icp: 100_000 tokens
+
+    confirmation_text: >
+      I confirm my understanding of the responsibilities and risks associated with participating in this token swap.
+
+    restricted_countries:
+        - AF # AFGHANISTAN
+        - BY # BELARUS
+        - BA # BOSNIA AND HERZEGOVINA
+        - BI # BURUNDI
+        - CF # CENTRAL AFRICAN REPUBLIC
+        - KP # NORTH KOREA
+        - CD # DEMOCRATIC REPUBLIC OF THE CONGO
+        - IR # IRAN
+        - IQ # IRAQ
+        - LB # LEBANON
+        - LY # LIBYA
+        - ML # MALI
+        - ME # MONTENEGRO
+        - MM # MYANMAR
+        - NI # NICARAGUA
+        - RU # RUSSIA
+        - RS # SERBIA
+        - SO # SOMALIA
+        - SD # SUDAN
+        - SY # SYRIA
+        - UA # UKRAINE
+        - VE # VENEZUELA
+        - YE # YEMEN
+        - ZW # ZIMBABWE        
+
+    VestingSchedule:
+
+        events: 3
+
+        interval: 3 months
+
+    duration: 14 days
+
+    neurons_fund_participation: true
