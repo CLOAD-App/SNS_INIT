@@ -261,4 +261,4 @@ Swap:
 
     duration: 14 days
 
-    neurons_fund_participation: true
+    neurons_fund_participation: false
